@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
+    </head>
+
+    <body>
+        <main id = "main"></main>
+
+        <template id = "fs">
+            <div id = "fs-screen" class = "screen">
+                <div>
+                    <p class = "logo" id = "fs-logo">Urna</p>
+    
+                    <button class = "butao" id = "fs-btn">Vamos começar?</button>
+                </div>
+            </div>
+        </template>
+
+        <template id = "snd">
+            <div id = "snd-screen" class = "screen">
+                <div>
+                    <p>De <strong>0 a 10</strong>, qual sua nota para nossa feira até este momento?</p>
+                    
+                    <img src = "imgs/Colégio crer.jfif">
+
+                    <div class = "snd-bottom">
+                        <select value="10" id = "snd-select">
+                            <option value="none" selected disabled hidden>Nota:</option>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                        <button class = "butao" id = "snd-btn">Próximo</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <template id = "trd">
+            <div id = "trd-screen" class = "screen">
+                <div>
+                    <p>Em uma batalha na Selva, quem levaria a melhor?</p>
+                    
+                    <div class = "radio-box">
+                        <div>
+                            <img for="persio" src = "imgs/persio.jpg" height = "120px">
+                            <div class = "radios">
+                                <input class = "trd-radio" type="radio" id="persio" name="radiobox" value="persio">
+                                <label for="persio">Pérsio</label>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img for="persio" src = "imgs/alex.jpg" height = "120px">
+                            <div class = "radios">
+                                <input class = "trd-radio" type="radio" id="alex" name="radiobox" value="persio">
+                                <label for="alex">Alex</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class = "butao" id = "trd-btn">Próximo</button>
+                </div>
+            </div>
+        </template>
+
+        <template id = "lst">
+            <div id = "lst-screen" class = "screen">
+                <div>
+                    <p>Contagem dos votos</p>
+
+                    <strong><p id = "media-nota"></p></strong>
+
+                    <h3>Em uma batalha na Selva, quem levaria a melhor?</h3>
+                    <div>
+                        <p id = "nota-persio"></p>
+                        <p id = "nota-alex"></p>
+                    </div>
+                <button class = "butao" id = "lst-btn">Terminar</button>
+                </div>  
+            </div>
+        </template>
+
+        <template id = "fim">
+            <div id = "fim-div" class = "screen">
+                <div>
+                    <p>FIM</p>
+                    <button class = "butao" id = "fim-btn">Voltar ao incío</button>
+                </div>
+            </div>
+        </template>
+
+        <template id = "count">
+            <div id = "count-div" class = "screen">
+                <div>
+                    <div>
+                        <p id = "media-nota"></p>
+                        <p id = "total"></p>
+                        <p id = "nota-persio"></p>
+                        <p id = "nota-alex"></p>
+                    </div>
+                <button class = "butao" id = "count-btn">Voltar ao início</button>
+
+                </div>
+            </div>
+        </template>
+            
+        <template id = "err">
+            <div id = "err-screen" class = "screen">
+                <div>
+                    <p id = "erro">ERRO!</p>
+                    <p>Por favor, verifique se a permissão de acesso a memória foi permitida ao app.<br>
+                        Após isso, reinicie o aplicativo.
+                    </p>
+                </div>
+            </div>
+        </template>
+        <script src = "script.js"></script>
+    </body>
+</html>

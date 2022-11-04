@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Roboto", sans-serif;
+    background-color: #f0ebf8;
+}
+
+.redBorder {
+    border:2px solid red;
+}
+
+.screen {
+    height: 100vh;
+    color: black;
+    user-select: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screen div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 10px;
+    width: 80%;
+    border-radius: 25px;
+}
+
+.butao {
+    box-sizing: border-box;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(30, 30, 30, 0.2);
+    background-color: white;
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.05);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-size: 15pt;
+    transition: 0.2s;
+    color: rgb(103, 58, 183);
+}
+
+p {
+    margin: 10px 10px;
+    font-size: 14pt;
+    text-justify: inter-word;
+}
+
+#fs-screen div p {
+    font-size: 32pt;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Fira Sans';
+}
+
+#fs-screenbutton:hover {
+    background-color: rgb(220, 220, 220);
+    transition: 0.2s;
+}
+
+#snd-select,  #snd-btn{
+    box-sizing: border-box;
+    font-size: 15pt;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(30, 30, 30, 0.2);
+    background-color: white;
+    box-shadow: 0px 0px 16px 4px rgba(0, 0, 0, 0.05);
+    width: 40%;
+    outline: none;
+}
+
+#snd-screen div {
+    display:flex;
+    flex-direction: column;
+}
+
+#snd-screen div img {
+    height: 150px;
+    width: auto;
+}
+
+#snd-screen div .snd-bottom {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#trd-screen p{
+    font-size: 17pt;
+}
+
+#trd-screen div {
+    flex-direction: column;
+}
+
+#trd-screen div .radio-box { 
+    flex-direction: row;
+}
+
+.trd-radio {
+    width: 16px;
+    height: 16px;    
+}
+
+#fim-div div p {
+    margin: 10px;
+    font-size: 40pt;
+}
+
+#fim-div div {
+    flex-direction: column;
+}
+
+#fim-div div button {
+    margin: 10px;
+}
+
+
+.radio-box div div {
+    display: flex;
+    flex-direction: row;
+}
+
+.radio-box div img {
+    border-radius: 10px;
+}
+
+#count-div div {
+    flex-direction: column;
+}
+
+#lst-screen div {
+    flex-direction: column;
+}
+
+#err-screen div {
+    flex-direction: column;
+    text-align: center;
+}
+
+#err-screen div #erro {
+    font-size: 30pt;
+    color: red;
+}
